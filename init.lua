@@ -67,8 +67,10 @@ require("nvim-tree").setup({
   renderer = {
     group_empty = true,
     icons = {
+        git_placement = "after",
         show = {
             file = true,
+            git = true,
         },
 	    glyphs = {
             folder = {
