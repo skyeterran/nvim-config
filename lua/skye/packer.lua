@@ -27,4 +27,5 @@ return require('packer').startup(function()
         'rose-pine/neovim',
         as = 'rose-pine',
     }
+    use 'ellisonleao/glow.nvim'
 end)
