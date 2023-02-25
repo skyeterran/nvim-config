@@ -12,6 +12,9 @@ vim.opt.wrap = true
 vim.g.mapleader = ","
 vim.g.maplocalleader = ";"
 
+-- Fuck autofolding
+vim.opt.foldenable = false
+
 -- Remapping keys
 local function map(mode, lhs, rhs, opts)
   local options = { noremap=true, silent=true }
@@ -26,4 +29,5 @@ map('', '<up>', '<C-w>k') -- Move to up pane
 map('', '<down>', '<C-w>j') -- Move to down pane
 map('', '<left>', '<C-w>h') -- Move to left pane
 map('', '<right>', '<C-w>l') -- Move to right pane
-map('', '<C-z>', ':ZenMode<CR>')
+map('', '<C-z>', ':ZenMode<CR>') -- CTRL+z for Zen Mode
+map('t', '<Esc>', '<C-\\><C-n>') -- Make it so ESC gets out of terminal insert mode
