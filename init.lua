@@ -9,6 +9,13 @@ vim.opt.splitbelow = true
 require("skye.skyespace")
 require("skye.packer")
 
+-- start common Lisp server as needed
+--vim.api.nvim_create_autocmd(
+--    "FileType",
+--    { pattern = { "lisp" },
+--    command = [[ros run --eval '(ql:quickload :swank)'  --eval '(swank:create-server :dont-close t)']] }
+--)
+
 -- set termguicolors to enable highlight groups
 -- vim.opt.termguicolors = true
 
@@ -89,3 +96,22 @@ require("nvim-tree").setup({
 })
 
 require("glow").setup()
+
+-- treesitter
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "c", "lua", "vim", "help", "rust" },
+  sync_install = false,
+  auto_install = true,
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+  rainbow = {
+      enable = true,
+      extended_mode = true,
+      max_file_lines = nil,
+  },
+}
+
+-- enable use of treesitter in conjure
+vim.g['conjure#extract#tree_sitter#enabled'] = true

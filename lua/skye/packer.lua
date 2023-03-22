@@ -28,4 +28,11 @@ return require('packer').startup(function()
         as = 'rose-pine',
     }
     use 'ellisonleao/glow.nvim'
+    use 'nvim-treesitter/nvim-treesitter'
+    use {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    use 'mrjones2014/nvim-ts-rainbow'
 end)
