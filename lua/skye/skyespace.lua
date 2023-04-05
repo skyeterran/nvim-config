@@ -31,6 +31,10 @@ map('', '<left>', '<C-w>h') -- Move to left pane
 map('', '<right>', '<C-w>l') -- Move to right pane
 map('', '<C-z>', ':ZenMode<CR>') -- CTRL+z for Zen Mode
 map('t', '<Esc>', '<C-\\><C-n>') -- Make it so ESC gets out of terminal insert mode
+map('', '<C-d>', '<C-d>zz') -- Focus on vertical center on downward jump
+map('', '<C-u>', '<C-u>zz') -- Focus on vertical center on upward jump
+map('', 'n', 'nzzv') -- Focus on vertical center on next jump
+map('', 'N', 'Nzzv') -- Focus on vertical center on prev jump
 
 -- telescope keymapping
 local builtin = require('telescope.builtin')

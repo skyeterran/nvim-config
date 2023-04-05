@@ -83,9 +83,9 @@ require("nvim-tree").setup({
             folder = {
                 arrow_closed = "-",
                 arrow_open = "↪️",
-            	default = "📁",
-                open = "📂",
-                empty = "🫧",
+            	default = "[ ]",
+                open = "[/]",
+                empty = "[E]",
             }
     	},
     },
