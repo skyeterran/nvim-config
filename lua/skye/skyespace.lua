@@ -36,7 +36,7 @@ map('', '<C-u>', '<C-u>zz') -- Focus on vertical center on upward jump
 map('', 'n', 'nzzv') -- Focus on vertical center on next jump
 map('', 'N', 'Nzzv') -- Focus on vertical center on prev jump
 map('', '_', 'I//<Esc>h') -- Comment out a line w/ underscore
-map('', '+', '^vl:s/\\/\\/<CR>') -- Uncomment out a line w/ plus
+map('', '+', '^vl:s/\\/\\/<CR>:noh<CR>') -- Uncomment out a line w/ plus
 
 -- telescope keymapping
 local builtin = require('telescope.builtin')
