@@ -25,10 +25,10 @@ local function map(mode, lhs, rhs, opts)
 end
 
 map('', '<C-Space>', ':NvimTreeToggle<CR>') -- Toggles tree view
-map('', '<up>', '<C-w>k') -- Move to up pane
-map('', '<down>', '<C-w>j') -- Move to down pane
-map('', '<left>', '<C-w>h') -- Move to left pane
-map('', '<right>', '<C-w>l') -- Move to right pane
+map('', '<C-k>', '<C-w>k') -- Move to up pane
+map('', '<C-j>', '<C-w>j') -- Move to down pane
+map('', '<C-h>', '<C-w>h') -- Move to left pane
+map('', '<C-l>', '<C-w>l') -- Move to right pane
 map('', '<C-z>', ':ZenMode<CR>') -- CTRL+z for Zen Mode
 map('t', '<Esc>', '<C-\\><C-n>') -- Make it so ESC gets out of terminal insert mode
 map('', '<C-d>', '<C-d>zz') -- Focus on vertical center on downward jump
@@ -37,6 +37,8 @@ map('', 'n', 'nzzv') -- Focus on vertical center on next jump
 map('', 'N', 'Nzzv') -- Focus on vertical center on prev jump
 map('', '+', 'I//<Esc>h') -- Comment out a line w/ plus
 map('', '_', '^vl:s/\\/\\/<CR>:noh<CR>') -- Uncomment out a line w/ underscore
+--map('', '<localleader>R', '[[:ConjureEval (swank:quit-lisp)<CR>!lisp &<CR>') -- Reset CL
+map('', '<localleader> ', ':ConjureEval ') -- Shortcut to eval a lisp line
 
 -- telescope keymapping
 local builtin = require('telescope.builtin')
