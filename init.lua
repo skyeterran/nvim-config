@@ -10,11 +10,11 @@ require("skye.skyespace")
 require("skye.packer")
 
 -- start common Lisp server as needed
---vim.api.nvim_create_autocmd(
---    "FileType",
---    { pattern = { "lisp" },
---    command = [[ros run --eval '(ql:quickload :swank)'  --eval '(swank:create-server :dont-close t)']] }
---)
+vim.api.nvim_create_autocmd(
+    "FileType",
+    { pattern = { "lisp" },
+    command = "!lisp &" }
+)
 
 -- set termguicolors to enable highlight groups
 -- vim.opt.termguicolors = true
@@ -34,6 +34,7 @@ require'nvim-web-devicons'.setup({
     name = "Zsh"
   }
  };
+    --command = "!ros run --eval '(ql:quickload :swank)'  --eval '(swank:create-server :dont-close t)' &" }
  color_icons = true;
  default = true;
  strict = true;
