@@ -35,4 +35,8 @@ return require('packer').startup(function()
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use 'mrjones2014/nvim-ts-rainbow'
+    use {
+        'TimUntersberger/neogit',
+        requires = 'nvim-lua/plenary.nvim'
+    }
 end)
