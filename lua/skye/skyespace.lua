@@ -31,8 +31,8 @@ map('', '<C-h>', '<C-w>h') -- Move to left pane
 map('', '<C-l>', '<C-w>l') -- Move to right pane
 map('', '<C-z>', ':ZenMode<CR>') -- CTRL+z for Zen Mode
 map('t', '<Esc>', '<C-\\><C-n>') -- Make it so ESC gets out of terminal insert mode
-map('', '<C-d>', '<C-d>zz') -- Focus on vertical center on downward jump
-map('', '<C-u>', '<C-u>zz') -- Focus on vertical center on upward jump
+--map('', '<C-d>', '<C-d>zz') -- Focus on vertical center on downward jump
+--map('', '<C-u>', '<C-u>zz') -- Focus on vertical center on upward jump
 map('', 'n', 'nzzv') -- Focus on vertical center on next jump
 map('', 'N', 'Nzzv') -- Focus on vertical center on prev jump
 map('', '+', 'I//<Esc>h') -- Comment out a line w/ plus
