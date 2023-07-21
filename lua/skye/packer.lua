@@ -11,6 +11,7 @@ return require('packer').startup(function()
         branch = 'release'
     }
     use 'alaviss/nim.nvim'
+    use 'Olical/aniseed'
     use 'Olical/conjure'
     use 'wlangstroth/vim-racket'
     use {
@@ -38,5 +39,10 @@ return require('packer').startup(function()
     use {
         'TimUntersberger/neogit',
         requires = 'nvim-lua/plenary.nvim'
+    }
+    use {"ziontee113/color-picker.nvim",
+        config = function()
+            require("color-picker")
+        end,
     }
 end)
