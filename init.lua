@@ -11,8 +11,8 @@ au BufNewFile,BufRead *.wgsl set filetype=wgsl
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+require("skye.lazy")
 require("skye.skyespace")
-require("skye.packer")
 
 -- start common Lisp server as needed
 vim.api.nvim_create_autocmd(
@@ -59,20 +59,12 @@ require'nvim-web-devicons'.setup({
  };
 })
 
--- empty setup using defaults
-require("nvim-tree").setup()
-
 -- OR setup with some options
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   sync_root_with_cwd = true,
   view = {
     width = 40,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-      },
-    },
     float = {
         enable = false,
     },
