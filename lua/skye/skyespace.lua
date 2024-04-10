@@ -15,6 +15,9 @@ vim.g.maplocalleader = ";"
 -- Fuck autofolding
 vim.opt.foldenable = false
 
+-- For Obsidian's UI
+vim.opt.conceallevel = 1
+
 -- Remapping keys
 local function map(mode, lhs, rhs, opts)
   local options = { noremap=true, silent=true }
