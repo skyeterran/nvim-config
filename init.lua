@@ -15,11 +15,11 @@ require("skye.lazy")
 require("skye.skyespace")
 
 -- start common Lisp server as needed
-vim.api.nvim_create_autocmd(
-    "FileType",
-    { pattern = { "lisp" },
-    command = "!lisp &" }
-)
+--vim.api.nvim_create_autocmd(
+--    "FileType",
+--    { pattern = { "lisp" },
+--    command = "!lisp &" }
+--)
 
 -- set termguicolors to enable highlight groups
 -- vim.opt.termguicolors = true
