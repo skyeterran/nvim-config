@@ -3,6 +3,16 @@
         "wgsl": {
           "command": "wgsl_analyzer",
           "filetypes": ["wgsl"],
+        },
+        "racket": {
+          "command": "racket",
+          "args": [
+            "-l",
+            "racket-langserver"
+          ],
+          "filetypes": [
+            "scheme", "rkt", "lisp"
+          ]
         }
     }
 }
