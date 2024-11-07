@@ -79,5 +79,6 @@ require("lazy").setup({
                 }
             }
         }
-    }
+    },
+    "ziglang/zig.vim",
 })
