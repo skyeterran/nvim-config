@@ -14,6 +14,9 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 
 require("lazy").setup({
     {
+        "numToStr/FTerm.nvim"
+    },
+    {
         'windwp/nvim-autopairs',
         config = function() require('nvim-autopairs').setup {} end
     },
