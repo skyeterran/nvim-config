@@ -38,6 +38,10 @@ require("lazy").setup({
         'rose-pine/neovim',
         name = 'rose-pine',
     },
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+    },
     'ellisonleao/glow.nvim',
     'nvim-treesitter/nvim-treesitter',
     {

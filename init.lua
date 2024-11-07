@@ -25,8 +25,8 @@ require("skye.skyespace")
 -- vim.opt.termguicolors = true
 
 -- load up color palette
-require("rose-pine").setup({
-    vim.cmd('colorscheme rose-pine')
+require("catppuccin").setup({
+    vim.cmd('colorscheme catppuccin')
 })
 
 -- set up icons
