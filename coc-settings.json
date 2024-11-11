@@ -19,4 +19,5 @@
     "zig.startUpMessage": true,
     "zig.path": "zls",
     "zig.debugLog": false,
+    "inlayHint.enable": true
 }

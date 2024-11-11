@@ -80,5 +80,8 @@ require("lazy").setup({
             }
         }
     },
-    "ziglang/zig.vim",
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
 })
