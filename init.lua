@@ -120,7 +120,7 @@ require'nvim-treesitter.configs'.setup {
 }
 
 -- enable use of treesitter in conjure
-vim.g['conjure#extract#tree_sitter#enabled'] = true
+--vim.g['conjure#extract#tree_sitter#enabled'] = true
 
 -- neogit
 local neogit = require('neogit')

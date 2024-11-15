@@ -26,7 +26,7 @@ require("lazy").setup({
     },
     'alaviss/nim.nvim',
     'Olical/aniseed',
-    'Olical/conjure',
+    -- 'Olical/conjure',
     'wlangstroth/vim-racket',
     {
       'nvim-tree/nvim-tree.lua',

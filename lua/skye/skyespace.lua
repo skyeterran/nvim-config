@@ -41,7 +41,7 @@ map('', 'N', 'Nzzv') -- Focus on vertical center on prev jump
 map('', '+', 'I//<Esc>h') -- Comment out a line w/ plus
 map('', '_', '^vl:s/\\/\\/<CR>:noh<CR>') -- Uncomment out a line w/ underscore
 --map('', '<localleader>R', '[[:ConjureEval (swank:quit-lisp)<CR>!lisp &<CR>') -- Reset CL
-map('', '<localleader> ', ':ConjureEval ') -- Shortcut to eval a lisp line
+--map('', '<localleader> ', ':ConjureEval ') -- Shortcut to eval a lisp line
 
 -- telescope keymapping
 local builtin = require('telescope.builtin')
