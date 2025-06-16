@@ -14,15 +14,17 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 
 require("lazy").setup({
     {
-        "numToStr/FTerm.nvim"
+        "nvim-treesitter/nvim-treesitter",
+        branch = 'master',
+        lazy = false,
+        build = ":TSUpdate"
     },
+    {'neoclide/coc.nvim', branch = 'release'},
+    --"rust-lang/rust.vim",
+    "numToStr/FTerm.nvim",
     {
         'windwp/nvim-autopairs',
         config = function() require('nvim-autopairs').setup {} end
-    },
-    {
-        'neoclide/coc.nvim',
-        branch = 'release'
     },
     'alaviss/nim.nvim',
     'Olical/aniseed',
@@ -34,9 +36,7 @@ require("lazy").setup({
         'nvim-tree/nvim-web-devicons', -- optional, for file icons
       }
     },
-    {
-      "folke/zen-mode.nvim",
-    },
+    "folke/zen-mode.nvim",
     {
         'rose-pine/neovim',
         name = 'rose-pine',
@@ -46,13 +46,11 @@ require("lazy").setup({
         name = "catppuccin",
     },
     'ellisonleao/glow.nvim',
-    'nvim-treesitter/nvim-treesitter',
     {
         'nvim-telescope/telescope.nvim',
-        tag = '0.1.x',
+        tag = '0.1.8',
         dependencies = {'nvim-lua/plenary.nvim'}
     },
-    'mrjones2014/nvim-ts-rainbow',
     {
         'TimUntersberger/neogit',
         dependencies = {'nvim-lua/plenary.nvim'}
