@@ -1,3 +1,5 @@
+local HOME = os.getenv("HOME")
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -82,4 +84,22 @@ require("lazy").setup({
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
+    {
+      "gruvw/strudel.nvim",
+      build = "npm install",
+      config = function()
+        require("strudel").setup{
+            ui = {
+                hide_menu_panel = true,
+                hide_top_bar = true,
+                hide_error_display = false,
+                hide_code_editor = false,
+            },
+            update_on_save = true,
+            headless = false, -- Run without window
+            --custom_css_file = "~/.config/nvim/strudel.css",
+            custom_css_file = HOME .. "/.config/nvim/strudel.css",
+        }
+      end,
+    }
 })

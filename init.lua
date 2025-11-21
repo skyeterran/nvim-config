@@ -66,7 +66,7 @@ require("nvim-tree").setup({
   view = {
     width = 40,
     float = {
-        enable = false,
+        enable = true,
     },
   },
   renderer = {
