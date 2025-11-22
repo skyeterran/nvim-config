@@ -90,11 +90,12 @@ require("lazy").setup({
       config = function()
         require("strudel").setup{
             ui = {
-                hide_menu_panel = true,
+                hide_menu_panel = false,
                 hide_top_bar = true,
                 hide_error_display = false,
                 hide_code_editor = false,
             },
+            start_on_launch = true,
             update_on_save = true,
             headless = false, -- Run without window
             --custom_css_file = "~/.config/nvim/strudel.css",
