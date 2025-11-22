@@ -1,5 +1,3 @@
-local HOME = os.getenv("HOME")
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -99,7 +97,7 @@ require("lazy").setup({
             update_on_save = true,
             headless = false, -- Run without window
             --custom_css_file = "~/.config/nvim/strudel.css",
-            custom_css_file = HOME .. "/.config/nvim/strudel.css",
+            custom_css_file = vim.fn.stdpath("config") .. "/strudel.css",
         }
       end,
     }
