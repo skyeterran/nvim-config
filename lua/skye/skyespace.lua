@@ -27,7 +27,7 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
-map('', '<C-Space>', ':NvimTreeToggle<CR>') -- Toggles tree view
+map('', 't', ':NvimTreeToggle<CR>') -- Toggles tree view
 map('', '<C-k>', '<C-w>k') -- Move to up pane
 map('', '<C-j>', '<C-w>j') -- Move to down pane
 map('', '<C-h>', '<C-w>h') -- Move to left pane
